@@ -45,9 +45,9 @@
               <i class="menu-arrow"></i> 
             </a>
             <div class="collapse" id="user">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Add New</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">View All</a></li>
+              <ul class="nav flex-column sub-menu" style="background: transparent!important;">
+                <li class="nav-item"> <a class="nav-link" href="user.php?mainVar=Add">Add New</a></li>
+                <li class="nav-item"> <a class="nav-link" href="user.php?mainVar=Manage">View All</a></li>
               </ul>
             </div>
           </li>
@@ -60,7 +60,7 @@
               <i class="menu-arrow"></i> 
             </a>
             <div class="collapse" id="comments">
-              <ul class="nav flex-column sub-menu">
+              <ul class="nav flex-column sub-menu" style="background: transparent!important;">
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">View All</a></li>
               </ul>
             </div>

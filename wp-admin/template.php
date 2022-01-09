@@ -8,12 +8,42 @@
             <div class="col-sm-12">
               <div class="home-tab">
               
-               <h1>It's Working</h1>
+
+               <?php 
+
+               if(isset($_GET['mainVar'])){
+                $mainVar = $_GET['mainVar'];
+               }else{
+                $mainVar = 'Manage';
+               }
+
+               // $mainVar = ($_GET['mainVar']) ? $_GET['mainVar'] : 'Manage';
+
+               if ($mainVar == 'Manage') {
+                 // read all users
+                echo 'view';
+               }
+               elseif ($mainVar == 'Add') {
+                 // add a new users
+                echo 'add';
+               }
+                elseif ($mainVar == 'Edit') {
+                 // edit users
+               }
+                elseif ($mainVar == 'Update') {
+                 // update users
+               }
+                elseif ($mainVar == 'Delete') {
+                 // delete an users
+               }
+
+               ?>
 
               </div>
             </div>
           </div>
         </div>
+      <!-- </div> -->
 
 
 
