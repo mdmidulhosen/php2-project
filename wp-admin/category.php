@@ -235,15 +235,13 @@
                                                     <?php 
                                                     if(isset($_GET['B-modal'])){
                                                       $delete_id = $_GET['B-modal'];
+                                                      $table_name         = 'category'; 
+                                                      $primary_key        = 'c_id';
+                                                      $redirect_location  = 'category.php';
 
-                                                      $delete_query = "DELETE FROM category WHERE cat_id ='$delete_id'";
-                                                      $delete_query = mysqli_query($db,$delete_query);
+                                                   delete_function($delete_id,$table_name,$primary_key,$redirect_location);
 
-                                                       if($delete_query){
-                                                            header('location: category.php');
-                                                          }else{
-                                                            die('Category Delete Error'.mysql_error($db));
-                                                          }
+                                                   // delete_function($delete_id,'category','c_id','category.php');
 
                                                     }
                                                     ?>
